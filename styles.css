@@ -24,15 +24,15 @@ body {
   
 /* Style ordered lists */
 ol {
-    max-width: 100%;
-    display: block;
-    margin: 20px auto;
+    color: deepskyblue;
+    padding: 30px;
   }
 
   /* Style image */
 img {
-    color: deepskyblue;
-    padding: 30px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
   }
 
   /* Example class */
