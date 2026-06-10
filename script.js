@@ -19,6 +19,17 @@ $(document).ready(function() {
         'font-size': '1em'
     });
 
+       // Style the Hide button to match the book cover
+       $('#hideButton').css({
+        'background-color': '#D94E32',
+        'color': 'white',
+        'padding': '10px 15px',
+        'border': 'none',
+        'border-radius': '5px',
+        'cursor': 'pointer',
+        'font-size': '1em'
+    });
+
     // Add the .highlight class to the first paragraph
     $('p:first').addClass('highlight');
 
@@ -26,7 +37,7 @@ $(document).ready(function() {
     $('#myButton').on('click', function() {
         console.log("Button was clicked!");
 
-        // CHALLENGE 2: Input Interaction
+        // Text Input Interaction
         // Read the current value from #textInput and display it in #outputArea
         const inputValue = $('#textInput').val();
         $('#outputArea').text(inputValue);
@@ -35,10 +46,7 @@ $(document).ready(function() {
         $('p:first').toggle();
         $('h1').toggleClass('active');
 
-        // CHALLENGE 3: CSS Class Toggling
-        // Toggle the .fancy class on #outputArea each time the button is clicked
-        $('#outputArea').toggleClass('fancy');
-        // END CHALLENGE 3
+    
     });
 
     // Add a hover effect to the main button
@@ -47,23 +55,11 @@ $(document).ready(function() {
         function() { $(this).css('background-color', 'cornflowerblue'); }
     );
 
-    // CHALLENGE 1: Add More Interaction
-    // Style the hide button to match the main button
-    $('#hideButton').css({
-        'background-color': 'slategray',
-        'color': 'white',
-        'padding': '10px 15px',
-        'border': 'none',
-        'border-radius': '5px',
-        'cursor': 'pointer',
-        'font-size': '1em',
-        'margin-right': '8px'
-    });
 
-    // Click handler: hide the <h1> element when #hideButton is clicked
+    // Hide the <h1> element when #hideButton is clicked
     $('#hideButton').on('click', function() {
-        $('h1').hide();
+        $('h1').toggle();
     });
-    // END CHALLENGE 1
+   
 
 }); // End of $(document).ready()
