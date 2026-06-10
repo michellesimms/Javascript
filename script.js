@@ -1,1 +1,1 @@
-alert('Hey, it worked!');
+console.log("My script is running!");
