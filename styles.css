@@ -24,7 +24,7 @@ body {
   
 /* Style ordered lists */
 ol {
-    color: deepskyblue;
+    background-color: deepskyblue;
     padding: 30px;
   }
 
