@@ -50,3 +50,8 @@ img {
     text-align: center;
   }
   
+  /* Add an example .active class to styles.css: */
+
+.active {
+  text-shadow: 2px 2px 5px grey;
+}
