@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Font stack, tries Arial first */
+    line-height: 1.5; /* Spacing between lines */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    margin: 20px; /* Add some space around the body content */
+  }
+  
+  h1 {
+    color: #0056b3; /* A shade of blue */
+    text-align: center; /* Center the heading */
+  }
+  
+  /* Style links */
+  a {
+    color: #0066cc;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover { /* Style links when mouse hovers over them */
+    color: #004080;
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+/* Style ordered lists */
+ol {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Style image */
+img {
+    color: deepskyblue;
+    padding: 30px;
+  }
+
+  /* Example class */
+  .important-note {
+    font-style: italic;
+    color: firebrick;
+  }
+  
+  /* Example ID */
+  #page-footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc; /* Light gray top border */
+    font-size: 0.9em; /* Slightly smaller font */
+    text-align: center;
+  }
+  
