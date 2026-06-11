@@ -83,8 +83,8 @@ $(document).ready(function() {
         $("#poem").html("<p style='color:red;'>Error loading poem data.</p>");
     }); // End of $.getJSON
 
-     // Style the zoomToNYC button with jQuery
-     $('#zoomToNYC').css({
+     // Style the zoomToMontreal button with jQuery
+     $('#zoomToMontreal').css({
         'background-color': 'hotpink',
         'color': 'white',
         'padding': '10px 15px',
