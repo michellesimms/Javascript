@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walt Whitman's Broadway - Interactive</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <!-- Link to our specific CSS for this page -->
     <link rel="stylesheet" href="poem.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
   </head>
   <body>
     <div class="container"> <!-- Optional container for layout -->
@@ -26,11 +29,15 @@
         <!-- Information about clicked elements will appear here -->
         <p>Click on a highlighted term above.</p>
       </div>
+      <h2>Map Context: New York City</h2>
+      <button id="zoomToNYC">Zoom to NYC</button>
+      <div id="map"></div>
     </div> <!-- End container -->
 
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- Include our specific JS for this page -->
     <script src="poem.js"></script>
+    <script src="map.js"></script>
   </body>
 </html>
