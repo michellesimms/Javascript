@@ -82,6 +82,9 @@ map.on('zoomend', function() {
 });
 
 
-
+// Reset the map view
+$('#zoomToNYC').on('click', function() {
+    map.setView([40.7128, -74.0060], 13);
+});
 
 });
