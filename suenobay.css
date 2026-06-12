@@ -1,77 +1,175 @@
-/* suenobayy.css */
+/* suenobay.css */
+
+:root {
+    --teal-deep: #2c5f6f;
+    --teal-mid: #4a8a96;
+    --mist-blue: #cfe6ec;
+    --mist-blue-light: #ecf9fa;
+    --cream: #f9f6ee;
+    --coral: #ee5d5d;
+    --ink: #2f3a3f;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Open Sans', 'Roboto', Arial, sans-serif;
+    font-family: 'Quicksand', 'Open Sans', Arial, sans-serif;
     line-height: 1.6;
-    margin: 20px;
-    background-color: #ECF9FA;
-    color: #222;
-  }
-  
-  .container {
-    max-width: 800px; /* Limit width for readability */
-    margin: 0 auto; /* Center the container */
-  }
-  
-  h1 {
-    text-align: center;
-    color: #4a4a4a;
-    margin-bottom: 30px;
-  }
-  
-  #poem blockquote {
-    margin-left: 40px; /* Indent the poem */
-    font-size: 1.1em;
-    color: #333;
-  }
-  
-  #poem p {
-      margin-bottom: 0.5em; /* Space between lines */
-  }
-  
-  /* Style the clickable terms */
-  .info-term {
-    cursor: pointer; /* Indicate interactivity */
-    color: #0066cc;
-    border-bottom: 1px dotted #0066cc;
-    text-decoration: none; /* Remove default underline */
-    transition: background-color 0.2s ease; /* Smooth hover effect */
-  }
-  
-  .info-term:hover {
-    background-color: #e0f0ff; /* Light blue background on hover */
-  }
-  
-  /* Style the info display area */
-  #info {
-    margin-top: 30px;
-    padding: 15px;
-    border-left: 5px solid #ddd;
-    background-color: #f9f9f9;
-    min-height: 40px; /* Ensure it has some height even when empty */
-  }
-  
-  #info.active-info { /* Style when info is displayed */
-     border-left-color: #0066cc; /* Change border color when active */
-  }
-  
-  #info p {
-      margin: 0; /* Remove default paragraph margin inside info box */
-  }
-  
-  hr {
-      border: none;
-      border-top: 1px solid #eee;
-      margin: 30px 0;
-  }
+    margin: 0;
+    background-color: var(--mist-blue-light);
+    background-image: linear-gradient(180deg, var(--mist-blue) 0%, var(--mist-blue-light) 320px);
+    color: var(--ink);
+}
 
-  /* poem.css */
+h1, h2 {
+    font-family: 'Baloo 2', 'Quicksand', sans-serif;
+    color: var(--teal-deep);
+}
+
+/* ---Hero --*/
+
+.hero {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(6, 15, 18, 0.55), rgba(10, 25, 30, 0.45)),
+        url("images/HowlerReef-2.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 60px 20px;
+}
+
+.hero-overlay {
+    max-width: 700px;
+    color: #fff;
+}
+
+.hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: var(--mist-blue);
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3.4em;
+    margin: 0 0 15px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hero .tagline {
+    font-size: 1.15em;
+    margin: 0;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* --- End Hero --- */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(44, 95, 111, 0.12);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--teal-deep);
+}
+
+/* ---------- Content blocks (image + text) ---------- */
+
+.creators {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.creators .content-image {
+    flex: 1 1 320px;
+}
+
+.creators .content-text {
+    flex: 1 1 320px;
+    padding: 30px;
+}
+
+.creators .content-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 320px;
+    object-fit: cover;
+}
+
+.creators.reverse {
+    flex-direction: row-reverse;
+}
+
+.creators h2 {
+    margin-top: 0;
+}
+
+/* ---------- Map section ---------- */
+
+.map h2 {
+    margin-top: 0;
+}
+
+#zoomToSaltSpring {
+    display: inline-block;
+    margin: 10px 0 20px;
+}
 
 #map {
-    height: 600px; /* Or any height you prefer */
-    width: 100%;   /* Make it fill the container width */
-    border: 1px solid #ccc; /* Optional: add a border */
-    margin-top: 20px; /* Optional: space above the map */
-  }
-  
-  
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--mist-blue);
+    margin-top: 10px;
+}
+
+/* ---------- Footer ---------- */
+
+#page-footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--teal-deep);
+    font-size: 0.9em;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .content-block,
+    .content-block.reverse {
+        flex-direction: column;
+    }
+
+    .content-block .content-image img {
+        max-height: 220px;
+    }
+}

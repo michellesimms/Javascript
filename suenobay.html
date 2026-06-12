@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     
-        <!-- Link to our specific CSS for this page -->
+        <!-- Link to CSS -->
     <link rel="stylesheet" href="suenobay.css">
+        <!--Links to Leaflet-->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -23,33 +24,34 @@
         <div class="hero-overlay">
             <p class="eyebrow">A Pacific Northwest Graphic Novel Series</p>
             <h1>Spend a Day in Sueño Bay</h1>
-            <p class="tagline">Misty forests. Rugged shores. Hidden crystals. Welcome to the islands that inspired
-                the adventure.</p>
+            <p class="tagline">Misty forests and rugged shores. Hidden crystals and mysterious creatures abound. Welcome to the island that inspired
+                the Sueño Bay adventures.</p>
         </div>
     </header>
 
     <main class="container">
 
         <section class="intro card">
-            <p>Sueño Bay is a fictional setting within the stories, but its misty forests, rugged beaches, and
-                Pacific Northwest environment are modeled heavily after the Gulf Islands, in particular Salt Spring
-                Island.</p>
+            <p>Sueño Bay is a fictional setting within the Sueño Bay Adventures series, but its forests, beaches, and
+                Pacific Northwest scenes are based on the Gulf Islands of British Columbia, in particular <a href="https://en.wikipedia.org/wiki/Salt_Spring_Island"></a>Salt Spring
+                Island</a>.</p> 
+            <p>Come for the mystery. Stay for the moon creatures.</p>
         </section>
 
-        <section class="content-block card">
+        <section class="creators card">
             <div class="content-image">
-                <img src="images/lostatwindyriver.jpg" alt="Illustration of two characters hiking along a windy river trail">
+                <img src="images/MikeandNancyDeas.png" alt="Mike and Nancy Deas">
             </div>
             <div class="content-text">
-                <h2>About the Creators</h2>
-                <p>Author and illustrator team Mike and Nancy Deas raise their family on Salt Spring Island. Mike has
-                    called Salt Spring home his entire life, while Nancy grew up on nearby Mayne Island.</p>
+                <h2>Meet the Creators</h2>
+                <p>Author and illustrator team Mike and Nancy Deas live with their family on Salt Spring Island. Mike has
+                    called Salt Spring home his whole life, while Nancy grew up on nearby Mayne Island and now calls Salt Spring home.</p>
             </div>
         </section>
 
-        <section class="content-block reverse card">
+        <section class="creators reverse card">
             <div class="content-image">
-                <img src="images/OtterLagoon-1.jpg" alt="Illustration from the Otter Lagoon">
+                <img src="images/ShadowIsland-2.jpg" alt="Illustration from Shadow Island">
             </div>
             <div class="content-text">
                 <h2>About the Series</h2>
@@ -60,10 +62,9 @@
             </div>
         </section>
 
-        <section class="map-section card">
+        <section class="map card">
             <h2>Explore Sueño Bay</h2>
-            <p>The map below displays Salt Spring Island. Each marker indicates a location that closely corresponds
-                to fictional settings or plot points in one of the Sueño Bay adventures.</p>
+            <p>Follow the trail of the Sueño Bay adventures across Salt Spring Island. Each marker on the map points to a real-world location that closely matches a setting, landmark or moment from the adventures.</p>
             <button id="zoomToSaltSpring">Reset Map</button>
             <div id="map"></div>
         </section>
@@ -74,10 +75,10 @@
         <p>&copy; 2026 Michelle</p>
     </footer>
 
-    <!-- Include jQuery -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Include our specific JS for this page -->
+    <!-- JS -->
     <script src="suenobay.js"></script>
     <script src="suenomap.js"></script>
 </body>

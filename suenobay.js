@@ -1,7 +1,7 @@
 // suenobay.js
 
 $(document).ready(function() {
-    console.log("Sueno Bay page ready.");
+    console.log("Explore Sueno Bay page ready.");
 
     // Use jQuery's getJSON method to fetch data from poem.json
     $.getJSON("poem.json", function(data) {
@@ -84,8 +84,8 @@ $(document).ready(function() {
     }); // End of $.getJSON
 
      // Style the zoomToMontreal button with jQuery
-     $('#zoomToMontreal').css({
-        'background-color': 'hotpink',
+     $('#zoomToSaltSpring').css({
+        'background-color': '#EE5D5D',
         'color': 'white',
         'padding': '10px 15px',
         'border': 'none',
@@ -93,5 +93,7 @@ $(document).ready(function() {
         'cursor': 'pointer',
         'font-size': '1em'
     });
+
+    
 
 }); // End of $(document).ready()
