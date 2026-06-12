@@ -3,35 +3,80 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spend a Day in Sueño Bay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+        <!-- Link to our specific CSS for this page -->
     <link rel="stylesheet" href="suenobay.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
-    <h1>Spend a Day in Sueño Bay</h1>
-    <p>Sueño Bay is a fictional setting within the stories, but its misty forests, rugged beaches, and Pacific Northwest
-        environment are modeled heavily after the Gulf Islands, in particular Salt Spring Island.</p>
-    <h2>About the Creators</h2>
-    <p>Author and illustrator team Mike and Nancy Deas raise their family on Salt Spring Island. Mike has called Salt
-        Spring home his entire life, while Nancy grew up on nearby Mayne Island.</p>
-    <h2>About the Series</h2>
-    <p>The Sueño Bay Adventure Series follows friends Ollie, Kay, Jenna and Sleeves, an unlikely foursome, on a wild ride of
-        adventures across Sueño Bay.</p>
-    <p>The magical and mysterious atmosphere of the real-life Gulf Islands heavily inspired the series' setting,
-        complete with legendary moon creatures and hidden crystals.</p>
-    <h2>Explore Sueño Bay</h2>
-    <p>The map below displays Salt Spring Island. Each marker indicates a location that closely corresponds to fictional
-        settings or plot point in one of the Sueño Bay adverntures.</p>
-    <button id="zoomToSaltSpring">Reset Map</button>
-    <div id="map">
 
-    </div>   
+    <header class="hero">
+        <div class="hero-overlay">
+            <p class="eyebrow">A Pacific Northwest Graphic Novel Series</p>
+            <h1>Spend a Day in Sueño Bay</h1>
+            <p class="tagline">Misty forests. Rugged shores. Hidden crystals. Welcome to the islands that inspired
+                the adventure.</p>
+        </div>
+    </header>
 
-    <div id="page-footer">
+    <main class="container">
+
+        <section class="intro card">
+            <p>Sueño Bay is a fictional setting within the stories, but its misty forests, rugged beaches, and
+                Pacific Northwest environment are modeled heavily after the Gulf Islands, in particular Salt Spring
+                Island.</p>
+        </section>
+
+        <section class="content-block card">
+            <div class="content-image">
+                <img src="images/lostatwindyriver.jpg" alt="Illustration of two characters hiking along a windy river trail">
+            </div>
+            <div class="content-text">
+                <h2>About the Creators</h2>
+                <p>Author and illustrator team Mike and Nancy Deas raise their family on Salt Spring Island. Mike has
+                    called Salt Spring home his entire life, while Nancy grew up on nearby Mayne Island.</p>
+            </div>
+        </section>
+
+        <section class="content-block reverse card">
+            <div class="content-image">
+                <img src="images/OtterLagoon-1.jpg" alt="Illustration from the Otter Lagoon">
+            </div>
+            <div class="content-text">
+                <h2>About the Series</h2>
+                <p>The Sueño Bay Adventure Series follows friends Ollie, Kay, Jenna and Sleeves, an unlikely
+                    foursome, on a wild ride of adventures across Sueño Bay.</p>
+                <p>The magical and mysterious atmosphere of the real-life Gulf Islands heavily inspired the series'
+                    setting, complete with legendary moon creatures and hidden crystals.</p>
+            </div>
+        </section>
+
+        <section class="map-section card">
+            <h2>Explore Sueño Bay</h2>
+            <p>The map below displays Salt Spring Island. Each marker indicates a location that closely corresponds
+                to fictional settings or plot points in one of the Sueño Bay adventures.</p>
+            <button id="zoomToSaltSpring">Reset Map</button>
+            <div id="map"></div>
+        </section>
+
+    </main>
+
+    <footer id="page-footer">
         <p>&copy; 2026 Michelle</p>
-    </div>
+    </footer>
+
     <!-- Include jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- Include our specific JS for this page -->
     <script src="suenobay.js"></script>
     <script src="suenomap.js"></script>
